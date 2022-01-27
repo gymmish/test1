@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
+  <body>
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <include src="./partials/modal.html"></include>
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/how-its-made.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
+    <include src="./partials/footer.html"></include>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $('.gallery-masonry').masonry({
+          // options
+          itemSelector: '.item',
+          columnWidth: '.persent-size',
+          percentPosition: true,
+        });
+      });
+    </script>
+    <script src="./index.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
