@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/style.css" />
+   <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+       <header class="header">
+      <div class="container">
+        <nav class="header-navigation">
+          <a href="" class="header__logo logo"
+            ><img
+              src="./images/logo/header-logo.svg"
+              alt="Логотип сайта"
+              width="145"
+              height="31"
+          /></a>
+        </nav>
+        <button  type="button" class="menu-open" data-menu-open> 
+          <svg class="menu-open__burgesr" width="40" height="40">
+                  <use href="./images/symbol-defs.svg#icon-menumenu"></use>
+              </svg>
+        </button>
+          <!-- <div class="header-menu"> -->
+        <ul class="header-list list">
+            <li class="header-list__item">
+              <a class="header-list__link link" href="./index.html">Студия</a>
+            </li>
+
+            <li class="header-list__item">
+              <a class="header-list__link  current link" href="./portfolio.html">Портфолио</a>
+            </li>
+
+            <li class="header-list__item">
+              <a class="header-list__link link" href="">Контакты</a>
+            </li>
+          </ul> 
+       
+        <div class="header-contacts">
+          <a class="header-contacts__link link" href="mailto:info@devstudio.com"
+            >
+            <svg class="header-contacts__icon" width="16" height="12">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a>
+
+          <a class="header-contacts__link link" href="tel:+380961111111"
+            >
+            <svg class="header-contacts__icon" width="10" height="16">
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11 </a>  
+      </div> 
+   <!-- </div> -->
+      <div class="mob-menu is-hidden" menu-modal>
+         <button type="button" class="menu-close" data-menu-close>
+            <svg class="menu-close-btn" width="18px" height="18px">
+                  <use href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link " href="./index.html">Студия</a>
+            </li>
+
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link current link" href="./portfolio.html">Портфолио</a>
+            </li>
+
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <div class="mob-menu-contacts">
+          <a class="mob-menu-contacts__link  tel link" href="tel:+380961111111"
+            >+38 096 111 11 11 </a>  
+          
+            <a class="mob-menu-contacts__link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a>
+        </div>
+        <div class="mob-menu-sosial">
+          <ul class="mob-sosial-list list">
+            <li class="mob-sosial-item"><a class="mob-sosial__link link">Instagram</a></li>
+            <li class="mob-sosial-item"><a class="mob-sosial__link link">Twitter</a></li>
+            <li class="mob-sosial-item"><a class="mob-sosial__link link">Facebook</a></li>
+            <li class="mob-sosial-item"><a class="mob-sosial__link link">LinkedIn</a></li>
+          </ul>
+        </div>
+    </div> 
+</header>
+
+
+<main>
+  <!--  Menu -->
+  <section class="menu">
+    <div class="container">
+    <ul class="menu-list list">
+      <li class="menu-item">
+        <button type="button" class="menu-button">Все</button></li>
+      <li class="menu-item">
+        <button type="button" class="menu-button">Веб-сайты</button>
+      </li>
+      <li class="menu-item">
+        <button type="button" class="menu-button">Приложения</button>
+      </li>
+      <li class="menu-item">
+        <button type="button" class="menu-button">Дизайн</button>
+      </li>
+      <li class="menu-item">
+        <button type="button" class="menu-button">Маркетинг</button>
+      </li>
+    </ul>
+  <!-- Portfolio -->
+    <h1  class="visually-hidden" ">Портфолио</h1>
+   <ul class="portfolio-list list">
+    
+    <li class="portfolio-item">
+    <div class="portfolio-overlay">
+      <!-- <img class="img" src="./images/portfolio/img-min.jpg" alt="Ноутбук" width="370px" height="294px"> -->
+      <picture>
+              <source srcset="./images/portfolio/img-min.jpg x1, ./images/portfolio/Dec/1Decx2.jpg 2x" 
+              media="(min-width:1200px)">
+
+               <source srcset="./images/portfolio/Tab/1Tab.jpg 1x, ./images/portfolio/Tab/1Tabx2.jpg 2x" 
+              media="(min-width:768px)">
+
+               <source srcset="./images/portfolio/Mob/1img.jpg 1x, ./images/portfolio/Mob/1imgx2.jpg 2x" 
+              media="(min-width:320px)">
+
+              <img src="./images/portfolio/Mob/1img.jpg"  alt="Ноутбук">
+            </picture>
+      <p class="portfolio-item-text">Технокряк это современная площадка распространения коронавируса. 
+        Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+    </div>
+    <div class="title-text">
+    <h2 class="menu-title">Технокряк</h2>
+    <p class="menu-text">Веб-сайт</p></div>
+    </li>
+    
+    <li class="portfolio-item">
+    <div class="portfolio-overlay">
+      <!-- <img class="img" src="./images/portfolio/img-2-min.jpg" alt="два баскетболиста" width="370px" height="294px"> -->
+       <picture>
+              <source srcset="./images/portfolio/img-2-min.jpg x1, ./images/portfolio/Dec/2Decx2.jpg 2x" 
+              media="(min-width:1200px)">
+
+               <source srcset="./images/portfolio/Tab/2Tab.jpg 1x, ./images/portfolio/Tab/2Tabx2.jpg 2x" 
+              media="(min-width:768px)">
+
+               <source srcset="./images/portfolio/Mob/2img.jpg 1x, ./images/portfolio/Mob/2imgx2.jpg  2x" 
+              media="(min-width:320px)">
+
+              <img src="./images/portfolio/Mob/2img.jpg"  alt="Два баскетболиста">
+            </picture>
+      <p class="portfolio-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quos sint, facere esse hic aperiam beatae itaque voluptatum iusto obcaecati.</p>
+    </div>
+    <div class="title-text">
+    <h2 class="menu-title">Постер <span lang="en">New Orlean vs Golden </span></h2>
+    <p class="menu-text">Дизайн</p></div>
+    </li>
+    
+    <li class="portfolio-item">
+    <div class="portfolio-overlay">
+      <!-- <img class="img" src="./images/portfolio/img-3-min.jpg" alt="логотип ресторана" width="370px" height="294px"> -->
+             <picture>
+              <source srcset="./images/portfolio/img-3-min.jpg x1, ./images/portfolio/Dec/3Decx2.jpg 2x" 
+              media="(min-width:1200px)">
+
+               <source srcset="./images/portfolio/Tab/3Tab.jpg 1x, ./images/portfolio/Tab/3Tabx3.jpg 2x" 
+              media="(min-width:768px)">
+
+               <source srcset="./images/portfolio/Mob/3img.jpg 1x, ./images/portfolio/Mob/3imgx2.jpg  2x" 
+              media="(min-width:320px)">
+
+              <img src="./images/portfolio/Mob/3img.jpg"  alt="Логотип ресторана">
+            </picture>
+      <p class="portfolio-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus culpa natus dignissimos repellat laborum sit nihil, iure sapiente iusto? Perspiciatis iusto facilis et amet vel incidunt voluptas eum alias quas veniam repudiandae corrupti, at sint, repellendus natus iste eligendi.</p>
+    </div>
+    <div class="title-text">
+    <h2 class="menu-title">Ресторан <span lang="en">Seafood </span> </h2>
+    <p class="menu-text">Приложение</p></div>
+    </li>
+    
+    <li class="portfolio-item">
+    <div class="portfolio-overlay">
+      <!-- <img class="img" src="./images/portfolio/img-4-min.jpg" alt="наушники" width="370px" height="294px"> -->
+        <picture>
+              <source srcset="./images/portfolio/img-4-min.jpg x1, ./images/portfolio/Dec/4Decx2.jpg 2x" 
+              media="(min-width:1200px)">
+
+               <source srcset="./images/portfolio/Tab/4Tab.jpg 1x, ./images/portfolio/Tab/4Tabx2.jpg 2x" 
+              media="(min-width:768px)">
+
+               <source srcset="./images/portfolio/Mob/4img.jpg 1x, ./images/portfolio/Mob/4imgx2.jpg  2x" 
+              media="(min-width:320px)">
+
+              <img src="./images/portfolio/Mob/4img.jpg"  alt="Наушники">
+            </picture>
+      <p class="portfolio-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor cum sit totam, quisquam aliquam porro quidem quis aperiam beatae fugiat dolorem distinctio rerum ad quasi consequuntur ex minima voluptate?</p>
+    </div>
+    <div class="title-text">
+    <h2 class="menu-title">Проект <span lang="en">Prime</span></h2>
+    <p class="menu-text">Маркетинг</p></div>
+    </li>
+   
+    <li class="portfolio-item">
+    <div class="portfolio-overlay">
+      <!-- <img class="img" src="./images/portfolio/img-5-min.jpg" alt="коробки" width="370px" height="294px"> -->
+      <picture>
+              <source srcset="./images/portfolio/img-5-min.jpg x1, ./images/portfolio/Dec/5Decx2.jpg 2x" 
+              media="(min-width:1200px)">
+
+               <source srcset="./images/portfolio/Tab/5Tab.jpg 1x, ./images/portfolio/Tab/5Tabx2.jpg 2x" 
+              media="(min-width:768px)">
+
+               <source srcset="./images/portfolio/Mob/5img.jpg 1x, ./images/portfolio/Mob/5imgx2.jpg  2x" 
+              media="(min-width:320px)">
+
+              <img src="./images/portfolio/Mob/5img.jpg"  alt="Коробки">
+              </picture>
+      <p class="portfolio-item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro enim mollitia maiores recusandae quos doloremque, debitis beatae error aliquid quia, earum ipsa?</p>
+    </div>
+    <div class="title-text">
+    <h2 class="menu-title">Проект <span lang="en"> Boxes</span></h2>
+    <p class="menu-text">Приложение</p></div>
+    </li>
+    
+    <li class="portfolio-item">
+    <div class="portfolio-overlay">
+      <!-- <img class="img" src="./images/portfolio/img-6-min.jpg" alt="компютер" width="370px" height="294px"> -->
+       <picture>
+              <source srcset="./images/portfolio/img-6-min.jpg x1, ./images/portfolio/Dec/6Decx2.jpg 2x" 
+              media="(min-width:1200px)">
+
+               <source srcset="./images/portfolio/Tab/6Tab.jpg 1x, ./images/portfolio/Tab/6Tabx2.jpg 2x" 
+              media="(min-width:768px)">
+
+               <source srcset="./images/portfolio/Mob/6img.jpg 1x, ./images/portfolio/Mob/6imgx2.jpg  2x" 
+              media="(min-width:320px)">
+
+              <img src="./images/portfolio/Mob/6img.jpg"  alt="Компютер">
+              </picture>
+      <p class="portfolio-item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque magnam beatae asperiores nulla dicta rerum sunt enim distinctio, maxime architecto minima, dolorem deserunt pariatur placeat molestiae dignissimos atque ratione velit.</p>
+    </div>
+    <div class="title-text">
+    <h2 class="menu-title" lang="en">Inspiration has no Borders</h2>
+    <p class="menu-text">Веб-сайт</p></div>
+    </li>
+
+    <li class="portfolio-item">
+     <div class="portfolio-overlay">
+      <!-- <img class="img" src="./images/portfolio/img-7-min.jpg" alt="открытый журнал" width="370px" height="294px"> -->
+      <picture>
+              <source srcset="./images/portfolio/img-7-min.jpg x1, ./images/portfolio/Dec/7Decx2.jpg 2x" 
+              media="(min-width:1200px)">
+
+               <source srcset="./images/portfolio/Tab/7Tab.jpg 1x, ./images/portfolio/Tab/7Tabx2.jpg 2x" 
+              media="(min-width:768px)">
+
+               <source srcset="./images/portfolio/Mob/7img.jpg 1x, ./images/portfolio/Mob/7imgx2.jpg  2x" 
+              media="(min-width:320px)">
+
+              <img src="./images/portfolio/Mob/7img.jpg"  alt="Открытый журнал">
+              </picture>
+      <p class="portfolio-item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque illum dolorum error delectus molestias consectetur?</p>
+    </div>
+    <div class="title-text">
+    <h2 class="menu-title">Издание  <span lang="en">Limited Edition</span></h2>
+    <p class="menu-text">Дизайн</p></div>
+    </li>
+
+    <li class="portfolio-item">
+    <div class="portfolio-overlay">
+          <picture>
+              <source srcset="./images/portfolio/8-min.jpg x1, ./images/portfolio/Dec/8Decx2.jpg 2x" 
+              media="(min-width:1200px)">
+
+               <source srcset="./images/portfolio/Tab/8Tab.jpg 1x, ./images/portfolio/Tab/8Tabx2.jpg 2x" 
+              media="(min-width:768px)">
+
+               <source srcset="./images/portfolio/Mob/img(8).jpg 1x, ./images/portfolio/Mob/img(8x2).jpg 2x" 
+              media="(min-width:320px)">
+
+              <img src="./images/portfolio/Mob/img(8).jpg"  alt="бирка">
+              </picture>
+      <p class="portfolio-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tenetur ex dicta rem voluptatibus inventore unde illum dolores dolorum. Fugiat, consectetur maiores!</p>
+    </div>
+    <div class="title-text">
+    <h2 class="menu-title">Проект LAB</h2>
+    <p class="menu-text">Маркетинг</p></div>
+    </li>
+
+    <li class="portfolio-item">
+    <div class="portfolio-overlay">
+      <!-- <img class="img" src="./images/portfolio/9-min.jpg" alt="ноутбук" width="370px" height="294px"> -->
+       <picture>
+              <source srcset="./images/portfolio/9-min.jpg x1, ./images/portfolio/Dec/9Decx2.jpg 2x" 
+              media="(min-width:1200px)">
+
+               <source srcset="./images/portfolio/Tab/9Tab.jpg 1x, ./images/portfolio/Tab/9Tabx2.jpg 2x" 
+              media="(min-width:768px)">
+
+               <source srcset="./images/portfolio/Mob/9img.jpg 1x, ./images/portfolio/Mob/9imgx2.jpg  2x" 
+              media="(min-width:320px)">
+
+              <img src="./images/portfolio/Mob/9img.jpg"  alt="ноутбук">
+      </picture>
+      <p class="portfolio-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque id cum distinctio nemo, aperiam laudantium veritatis ad.</p>
+    </div> 
+    <div class="title-text">
+    <h2 class="menu-title" lang="en">ТGrowing Business</h2>
+    <p class="menu-text">Приложение</p></div>
+    </li>
+    </div>
+  </section>
+</main>
+<!-- FOOTER -->
+     <footer class="footer">
+      <div class="container-footer container">
+        <div class="address">
+      <a class="footer-link-logo link" href="" target="" rel="" lang="en"
+        >Web<span class="colortext">Studio</span></a
+      >
+      <address class="footer-adress">
+        <ul class="footer-list list">
+          <li class="footer-list__item">
+            <a
+              class="footer-list__item-adress link"
+              href="https://goo.gl/maps/JRaVGLmh44VoRVas7"
+              target="_blank"
+              rel="noopener noreferrer"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__contacts link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__contacts link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </address>
+      </div>
+      <div class="footer-icon-list">
+        <h2 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+        <ul class="footer-icon-item list">
+                        <li class="footer-item-icon">
+                          <a href="" class="footer-icon-link link">
+                            <svg class="footer-icon" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                          </a>
+                          </li>
+                          <li class="footer-item-icon">
+                             <a href="" class="footer-icon-link link">
+                            <svg class="footer-icon" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                          </a>
+                          </li>
+                           <li class="footer-item-icon">
+                             <a href="" class="footer-icon-link link">
+                            <svg class="footer-icon" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                          </a>
+                          </li>
+                           <li class="footer-item-icon">
+                             <a href="" class="footer-icon-link link">
+                            <svg class="footer-icon" width="20" height="20">
+                              <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                          </a>
+                          </li>
+        </ul>
+    </div>
+      <div class="mailing">
+        <h2 class="footer-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <input type="text" id="input-footer-mail" class="input-footer-mail" placeholder="E-mail">
+        <button class="footer-btn btn" type="button">Подписаться
+          <svg class="footer-btn-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+          </svg>
+        </button>
+        
+      </div>
+      </div>
+    </footer> 
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-modal" data-modal-close>
+        <svg class="open-icon" width="11" height="11">
+         <use href="./images/symbol-defs.svg#icon-close"></use>
+           </svg>
+        </button>
+        <form action="+" class="modal-form">
+        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+        <div class="modal-form-field">
+        <label for="input-name" class="modal-form-lable">Имя</label>
+        <span class="input-wrap">
+        <input type="text" id="input-name" class="modal-form-input">
+        <svg class="modal-icon" width="18" height="18">
+         <use href="./images/symbol-defs.svg#icon-person-modal"></use>
+         </svg>
+        </span>
+      </div>
+      <div class="modal-form-field">
+        <label for="input-tel" class="modal-form-lable">Телефон</label>
+        <span class="input-wrap">
+        <input type="text" id="input-tel" class="modal-form-input">
+        <svg class="modal-icon" width="18" height="18">
+         <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
+         </svg>
+         </span>
+      </div>
+      <div class="modal-form-field">
+        <label for="input-mail" class="modal-form-lable">Почта</label>
+        <span class="input-wrap">
+        <input type="text" id="input-mail" class="modal-form-input">
+      <svg class="modal-icon" width="18" height="18">
+         <use href="./images/symbol-defs.svg#icon-email-modal"></use>
+         </svg>
+        </span>
+      </div>
+      <div class="modal-form-field">
+         <label for="input-comment" class="modal-form-lable">Коментарий</label>
+        <textarea name="modal-comment" id="comment" placeholder="Введите текст" class="modal-comment"></textarea>
+      </div>
+      <div class="modal-form-text">
+        <input type="checkbox" id="check"  class="visually-hidden checkbox" name="policy">
+        <label for="check" class="check-lable"><span class="ceckbox-text">Соглашаюсь с рассылкой и принимаю <a href="" class="modal-form-link">Условия договора </a> </span></label>
+      </div>
+      <button class="form-btn btn" type="button">Отправить</button>
+      </form>
+    </div>
+    
+ <script defer src="./js/menu.js"></script>
+  </body>
+</html>
+
+
+
+
+
+<svg aria-hidden="true" style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
+<defs>
+<symbol id="icon-red" viewBox="0 0 26 32"><path fill="none" stroke="var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M5.172 3.2 19.341 16 5.172 28.8"/>
+</symbol>
+<symbol id="icon-white" viewBox="0 0 26 32"><path fill="none" stroke="var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M5.172 3.2 19.341 16 5.172 28.8"/>
+</symbol>
+
+<symbol id="icon-faceb" viewBox="0 0 16 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M14.266 15.97h-4.176v15.39h-6.328v-15.392h-3.008v-5.408h3.008v-3.498c0-2.504 1.184-6.422 6.384-6.422l4.688 0.019v5.25h-3.402c-0.557 0-1.342 0.282-1.342 1.475v3.184h4.73l-0.554 5.4z"></path>
+</symbol>
+<symbol id="icon-telegram" viewBox="0 0 40 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M16.206 20.75l-0.636 8.34c0.908 0 1.302-0.366 1.774-0.802l4.26-3.8 8.83 6.034c1.62 0.84 2.76 0.398 3.196-1.39l5.796-25.346h0.002c0.514-2.236-0.866-3.108-2.444-2.56l-34.064 12.172c-2.324 0.84-2.29 2.052-0.396 2.6l8.71 2.528 20.23-11.814c0.952-0.588 1.816-0.264 1.104 0.326l-16.362 13.712z"></path>
+</symbol>
+<symbol id="icon-vector" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M16 0.941c-8.272 0-15.059 6.789-15.059 15.059 0 7.059 4.954 13.47 11.53 15.059v-4.982c-0.651 0.144-1.251 0.147-1.915-0.048-0.89-0.264-1.613-0.856-2.149-1.76-0.342-0.576-0.949-1.203-1.581-1.157l-0.155-1.758c1.368-0.117 2.55 0.834 3.253 2.014 0.312 0.525 0.672 0.832 1.133 0.968 0.445 0.131 0.923 0.069 1.482-0.128 0.139-1.117 0.651-1.536 1.037-2.123-3.922-0.586-5.485-2.667-6.106-4.309-0.822-2.181-0.381-4.906 1.072-6.627 0.029-0.032 0.080-0.122 0.061-0.182-0.667-2.014 0.144-3.68 0.176-3.856 0.768 0.227 0.893-0.229 3.341 1.258l0.422 0.254c0.176 0.106 0.122 0.045 0.299 0.032 0.943-0.266 2.029-0.428 3.15-0.445l0.010-0c1.147 0.018 2.247 0.183 3.294 0.478l-0.090-0.022 0.138 0.014c-0.013-0.002 0.037-0.010 0.12-0.059 3.056-1.851 2.947-1.246 3.766-1.512 0.030 0.176 0.832 1.869 0.171 3.856-0.088 0.275 2.651 2.784 1.133 6.811-0.621 1.643-2.184 3.723-6.106 4.309 0.502 0.768 1.107 1.174 1.104 2.755v6.219c6.576-1.589 11.53-8 11.53-15.059 0-8.272-6.787-15.059-15.059-15.059z"></path>
+</symbol>
+</defs>
+</svg>
+
+
+<div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="modal-close" data-modal-close>
+            <svg class="close-icon" width="15" height="15">
+              <use href="./images/sprite-modal.svg#icon-close"></use>
+            </svg>
+          </button>
+          <form action="+" class="modal-form">
+            <b class="modal-title">Leave your contacts and we'll call you back</b>
+            <div class="modal-form-field">
+              <label for="input-name" class="modal-form-lable"></label>
+              <span class="input-wrap">
+                <input
+                  type="text"
+                  id="input-name"
+                  placeholder="Name"
+                  class="modal-form-input"
+                />
+                <svg class="modal-icon" width="15" height="15">
+                  <use href="./images/sprite-modal.svg#icon-user"></use>
+                </svg>
+              </span>
+            </div>
+            <div class="modal-form-field">
+              <label for="input-tel" class="modal-form-lable"></label>
+              <span class="input-wrap">
+                <input
+                  type="text"
+                  id="input-tel"
+                  placeholder="+380"
+                  class="modal-form-input"
+                />
+                <svg class="modal-icon" width="15" height="15">
+                  <use href="./images/sprite-modal.svgicon-phone"></use>
+                </svg>
+              </span>
+            </div>
+
+            <div class="modal-form-field">
+              <label for="input-comment" class="modal-form-lable"
+                >Comennt</label
+              >
+              <textarea
+                name="modal-comment"
+                id="comment"
+                placeholder=""
+                class="modal-comment"
+              ></textarea>
+            </div>
+            <div class="modal-form-text">
+              <input
+                type="checkbox"
+                id="check"
+                class="visually-hidden checkbox"
+                name="policy"
+              />
+              <label for="check" class="check-lable"
+                ><span class="ceckbox-text"
+                  >I agree to the terms of service
+                  <a href="" class="modal-form-link">terms of service </a>
+                </span></label
+              >
+            </div>
+            <div class="modal-footer">
+            <button class="modal-btn btn" type="button">Buy now </button>
+          </form>
+          <img class="back-img" src="./images/modal-milk.png" alt="" /></div>
+        </div>
+        
+
+        .modal-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  letter-spacing: 0.06em;
+  background-color: #ecebeb;
+  color: #d41443;
+  border-radius: 22px;
+  padding: 20px 37px 20px 37px;
+  border: none;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #c7133e;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal {
+  position: absolute;
+  min-height: 581px;
+  background-color: #e17992;
+  border-radius: 22px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  width: 450px;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+}
+
+.modal-form-field {
+  margin-bottom: 25px;
+}
+
+.modal-close {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.close-icon {
+  fill: #ecebeb;
+}
+
+.close-icon:hover,
+.close-icon:focus {
+  fill: #c7133e;
+}
+
+.modal-title {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  color: #ecebeb;
+}
+
+.modal-form-lable {
+  font-size: 20px;
+  line-height: 14px;
+  color: #ecebeb;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  left: 576px;
+  top: 314px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 17px;
+  padding-left: 42px;
+  color: #c7133e;
+  &:focus,
+  &:hover {
+    border-color: #c7133e;
+    outline: none;
+  }
+}
+
+.input-wrap {
+  display: block;
+  position: relative;
+  transition: border 250ms linear;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #ecebeb;
+  .modal-form-input:hover + &,
+  .modal-form-input:focus + & {
+    fill: #c7133e;
+  }
+}
+
+.modal-comment {
+  width: 100%;
+  height: 120px;
+  left: 576px;
+  top: 314px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 17px;
+  padding-left: 16px;
+  padding-top: 12px;
+  resize: none;
+  color: #c7133e;
+  &:focus,
+  &:hover {
+    border-color: #c7133e;
+    outline: none;
+  }
+  &::placeholder {
+    font-size: 14px;
+  }
+}
+
+.modal-form-link {
+  color: #c7133e;
+}
+
+.check-lable {
+  display: flex;
+  align-items: center;
+  &::before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid #c7133e;
+    border-radius: 2px;
+    margin-right: 5px;
+  }
+}
+
+.checkbox:checked + .check-lable::before {
+  background: #c7133e;
+  fill: #ecebeb;
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.modal-form-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.ceckbox-text {
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ecebeb;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.back-img {
+  width: 100%;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
