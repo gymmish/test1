@@ -1,21 +1,16 @@
 .header {
-  border-bottom: 1px solid #ececec;
   width: 100%;
   justify-content: space-between;
 }
 
 .header__logo {
-  margin-right: 95px;
-  margin: 16px 0 16px 15px;
+  // margin-right: 95px;
+  // margin: 16px 0 16px 15px;
 }
 
 .header-list {
   display: flex;
   margin-left: 95px;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 }
 
 .header-list__item .current {
